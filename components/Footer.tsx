@@ -8,7 +8,7 @@ export default function Footer() {
           <div className="flex items-center gap-3">
             <div className="relative w-8 h-8">
               <Image
-                src="/coach_rookies.png"
+                src="/coach_rookies_透過.png"
                 alt="コーチルーキーズ ロゴ"
                 fill
                 className="object-contain"

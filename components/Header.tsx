@@ -9,7 +9,7 @@ export default function Header() {
           <div className="flex items-center gap-2">
             <div className="relative w-10 h-10">
               <Image
-                src="/coach_rookies.png"
+                src="/coach_rookies_透過.png"
                 alt="コーチルーキーズ ロゴ"
                 fill
                 className="object-contain"

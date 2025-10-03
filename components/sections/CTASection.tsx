@@ -1,11 +1,22 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Users, MessageCircle } from 'lucide-react'
+import Image from 'next/image'
 
 export default function CTASection() {
   return (
     <section className="py-16 md:py-24 bg-gradient-to-br from-brand-orange/10 to-brand-blue/10">
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-8 max-w-3xl mx-auto">
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="relative w-12 h-12">
+              <Image
+                src="/coach_rookies_透過.png"
+                alt="コーチルーキーズ ロゴ"
+                fill
+                className="object-contain"
+              />
+            </div>
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
             一緒にAI時代を勝ち抜きましょう
           </h2>
