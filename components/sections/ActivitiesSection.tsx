@@ -1,4 +1,10 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
 import { Brain, MessageSquare, Coffee } from 'lucide-react'
 
 export default function ActivitiesSection() {
@@ -6,19 +12,26 @@ export default function ActivitiesSection() {
     {
       icon: Brain,
       title: 'AI勉強会',
-      description: '最新のAIツールや活用方法を学び、コーチングに活かす方法を探求します。',
-      features: ['ChatGPT/Claudeの活用術', 'プロンプトエンジニアリング', 'AIツールの比較・選定'],
+      description:
+        '最新のAIツールや活用方法を学び、コーチングに活かす方法を探求します。',
+      features: [
+        'ChatGPT/Claudeの活用術',
+        'プロンプトエンジニアリング',
+        'AIツールの比較・選定',
+      ],
     },
     {
       icon: MessageSquare,
       title: 'AIフィードバックシェア',
-      description: '実際のAI活用事例やコーチングセッションへの応用を共有します。',
+      description:
+        '実際のAI活用事例やコーチングセッションへの応用を共有します。',
       features: ['成功事例の共有', '失敗からの学び', 'ベストプラクティス'],
     },
     {
       icon: Coffee,
       title: '交流会/飲み会',
-      description: 'リラックスした雰囲気でネットワーキングを深め、お互いの悩みを共有します。',
+      description:
+        'リラックスした雰囲気でネットワーキングを深め、お互いの悩みを共有します。',
       features: ['カジュアルな情報交換', 'キャリア相談', '仲間づくり'],
     },
   ]
@@ -34,7 +47,7 @@ export default function ActivitiesSection() {
             月に1〜2回、オンラインまたはオフラインで集まり、学びと交流を深めます。
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {activities.map((activity, index) => {
             const Icon = activity.icon
@@ -47,9 +60,7 @@ export default function ActivitiesSection() {
                     </div>
                     <CardTitle className="text-xl">{activity.title}</CardTitle>
                   </div>
-                  <CardDescription>
-                    {activity.description}
-                  </CardDescription>
+                  <CardDescription>{activity.description}</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-2">

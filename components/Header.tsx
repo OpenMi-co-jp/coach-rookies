@@ -15,29 +15,50 @@ export default function Header() {
                 className="object-contain"
               />
             </div>
-            <span className="font-bold text-lg hidden sm:block">コーチルーキーズ</span>
+            <span className="font-bold text-lg hidden sm:block">
+              コーチルーキーズ
+            </span>
           </div>
-          
+
           <nav className="hidden md:flex items-center gap-6">
-            <a href="#concept" className="text-sm font-medium hover:text-brand-orange transition-colors">
+            <a
+              href="#concept"
+              className="text-sm font-medium hover:text-brand-orange transition-colors"
+            >
               コンセプト
             </a>
-            <a href="#activities" className="text-sm font-medium hover:text-brand-orange transition-colors">
+            <a
+              href="#activities"
+              className="text-sm font-medium hover:text-brand-orange transition-colors"
+            >
               活動内容
             </a>
-            <a href="#benefits" className="text-sm font-medium hover:text-brand-orange transition-colors">
+            <a
+              href="#benefits"
+              className="text-sm font-medium hover:text-brand-orange transition-colors"
+            >
               参加メリット
             </a>
-            <a href="#members" className="text-sm font-medium hover:text-brand-orange transition-colors">
+            <a
+              href="#members"
+              className="text-sm font-medium hover:text-brand-orange transition-colors"
+            >
               メンバー
             </a>
           </nav>
-          
+
           <div className="flex items-center gap-2">
-            <Button size="sm" variant="outline" className="border-brand-green text-brand-green hover:bg-brand-green/10 hidden sm:flex">
+            <Button
+              size="sm"
+              variant="outline"
+              className="border-brand-green text-brand-green hover:bg-brand-green/10 hidden sm:flex"
+            >
               Slack参加
             </Button>
-            <Button size="sm" className="bg-brand-orange hover:bg-brand-orange/90 text-white">
+            <Button
+              size="sm"
+              className="bg-brand-orange hover:bg-brand-orange/90 text-white"
+            >
               参加申込
             </Button>
           </div>

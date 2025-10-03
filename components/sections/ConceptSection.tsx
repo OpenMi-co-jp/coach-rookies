@@ -40,7 +40,7 @@ export default function ConceptSection() {
             お互いの経験や知識を共有しながら、共に成長していくコミュニティです。
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
           {goals.map((goal, index) => {
             const Icon = goal.icon

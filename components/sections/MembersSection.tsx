@@ -27,32 +27,36 @@ export default function MembersSection() {
             運営メンバーと現在のコミュニティ規模
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-12">
           {members.map((member, index) => (
             <div
               key={index}
               className="flex flex-col items-center text-center space-y-4"
             >
-              <div className={`w-24 h-24 rounded-full ${member.color} flex items-center justify-center shadow-lg`}>
+              <div
+                className={`w-24 h-24 rounded-full ${member.color} flex items-center justify-center shadow-lg`}
+              >
                 <User className="h-12 w-12 text-white" />
               </div>
               <div className="space-y-1">
                 <h3 className="font-semibold text-lg">{member.name}</h3>
                 <p className="text-sm text-gray-600">{member.role}</p>
-                <p className="text-sm text-gray-600 mt-2">{member.description}</p>
+                <p className="text-sm text-gray-600 mt-2">
+                  {member.description}
+                </p>
               </div>
             </div>
           ))}
         </div>
-        
+
         <div className="bg-gradient-to-br from-brand-yellow/20 to-brand-green/20 rounded-xl p-8 max-w-3xl mx-auto">
-          <h3 className="text-2xl font-semibold text-center mb-6">
-            募集対象
-          </h3>
+          <h3 className="text-2xl font-semibold text-center mb-6">募集対象</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="space-y-3">
-              <h4 className="font-semibold text-lg text-brand-blue">こんな方を歓迎</h4>
+              <h4 className="font-semibold text-lg text-brand-blue">
+                こんな方を歓迎
+              </h4>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2" />
@@ -69,7 +73,9 @@ export default function MembersSection() {
               </ul>
             </div>
             <div className="space-y-3">
-              <h4 className="font-semibold text-lg text-brand-green">参加条件</h4>
+              <h4 className="font-semibold text-lg text-brand-green">
+                参加条件
+              </h4>
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2" />

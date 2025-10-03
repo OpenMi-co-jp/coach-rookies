@@ -4,11 +4,13 @@ export default function BenefitsSection() {
   const benefits = [
     {
       title: '最新情報へのアクセス',
-      description: 'AIツールやコーチング手法の最前線情報をいち早くキャッチアップ',
+      description:
+        'AIツールやコーチング手法の最前線情報をいち早くキャッチアップ',
     },
     {
       title: '実践的なフィードバック',
-      description: '他のメンバーの経験から学び、自分のコーチングにすぐに活かせる',
+      description:
+        '他のメンバーの経験から学び、自分のコーチングにすぐに活かせる',
     },
     {
       title: '切磋琢磨できる仲間',
@@ -39,7 +41,7 @@ export default function BenefitsSection() {
             コーチルーキーズに参加することで得られる具体的なメリット
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {benefits.map((benefit, index) => (
             <div

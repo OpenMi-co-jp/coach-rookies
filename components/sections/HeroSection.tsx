@@ -16,7 +16,7 @@ export default function HeroSection() {
               className="object-contain"
             />
           </div>
-          
+
           <div className="space-y-4">
             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
               コーチルーキーズ
@@ -25,7 +25,7 @@ export default function HeroSection() {
               AI時代を勝ち抜く若手コーチの徒党。
             </p>
           </div>
-          
+
           <div className="bg-white/80 backdrop-blur rounded-lg shadow-lg p-6 space-y-4">
             <h2 className="text-lg font-semibold">次回イベント情報</h2>
             <div className="flex flex-col sm:flex-row gap-4 text-left">
@@ -39,12 +39,19 @@ export default function HeroSection() {
               </div>
             </div>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white text-lg px-8 py-6">
+            <Button
+              size="lg"
+              className="bg-brand-orange hover:bg-brand-orange/90 text-white text-lg px-8 py-6"
+            >
               次回のイベントに参加する
             </Button>
-            <Button size="lg" variant="outline" className="border-brand-green text-brand-green hover:bg-brand-green/10 text-lg px-8 py-6">
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-brand-green text-brand-green hover:bg-brand-green/10 text-lg px-8 py-6"
+            >
               Slackに参加する
             </Button>
           </div>
