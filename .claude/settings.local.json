@@ -21,7 +21,8 @@
       "Bash(pnpm remove:*)",
       "Bash(pnpm build:*)",
       "Bash(git init:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }

@@ -1,18 +1,20 @@
 import { Button } from '@/components/ui/button'
 import { Calendar, MapPin } from 'lucide-react'
+import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-brand-blue/10 via-white to-brand-orange/10">
+    <section className="relative min-h-[80vh] flex items-center justify-center bg-gradient-to-br from-brand-blue/10 via-white to-brand-orange/10 pt-16">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center space-y-8 text-center">
-          <div className="flex items-center justify-center w-32 h-32 rounded-full bg-white shadow-lg p-4">
-            <div className="grid grid-cols-2 gap-1">
-              <div className="w-12 h-12 bg-brand-orange rounded-tl-full" />
-              <div className="w-12 h-12 bg-brand-blue rounded-tr-full" />
-              <div className="w-12 h-12 bg-brand-green rounded-bl-full" />
-              <div className="w-12 h-12 bg-brand-yellow rounded-br-full" />
-            </div>
+          <div className="relative w-48 h-48 md:w-56 md:h-56">
+            <Image
+              src="/coach_rookies.png"
+              alt="コーチルーキーズ ロゴ"
+              fill
+              priority
+              className="object-contain"
+            />
           </div>
           
           <div className="space-y-4">
