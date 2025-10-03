@@ -31,11 +31,11 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 text-left">
               <div className="flex items-center gap-2">
                 <Calendar className="h-5 w-5 text-brand-blue" />
-                <span className="font-medium">2025年2月XX日(土) 14:00-17:00</span>
+                <span className="font-medium">11月1日(金) 15:00〜</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5 text-brand-orange" />
-                <span className="font-medium">東京都内 or オンライン</span>
+                <span className="font-medium">東京都内予定</span>
               </div>
             </div>
           </div>
