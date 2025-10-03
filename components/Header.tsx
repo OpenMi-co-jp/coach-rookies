@@ -33,9 +33,14 @@ export default function Header() {
             </a>
           </nav>
           
-          <Button size="sm" className="bg-brand-orange hover:bg-brand-orange/90 text-white">
-            参加申込
-          </Button>
+          <div className="flex items-center gap-2">
+            <Button size="sm" variant="outline" className="border-brand-green text-brand-green hover:bg-brand-green/10 hidden sm:flex">
+              Slack参加
+            </Button>
+            <Button size="sm" className="bg-brand-orange hover:bg-brand-orange/90 text-white">
+              参加申込
+            </Button>
+          </div>
         </div>
       </div>
     </header>

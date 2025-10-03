@@ -14,12 +14,6 @@ export default function MembersSection() {
       description: 'コミュニティ運営とイベント企画担当',
       color: 'bg-brand-blue',
     },
-    {
-      name: '山田さん',
-      role: '共同運営',
-      description: 'AI勉強会のファシリテーター',
-      color: 'bg-brand-green',
-    },
   ]
 
   return (
@@ -34,7 +28,7 @@ export default function MembersSection() {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto mb-12">
           {members.map((member, index) => (
             <div
               key={index}
@@ -52,17 +46,45 @@ export default function MembersSection() {
           ))}
         </div>
         
-        <div className="bg-gradient-to-br from-brand-yellow/20 to-brand-blue/20 rounded-xl p-8 max-w-2xl mx-auto">
-          <h3 className="text-2xl font-semibold text-center mb-4">
-            コミュニティ規模
+        <div className="bg-gradient-to-br from-brand-yellow/20 to-brand-green/20 rounded-xl p-8 max-w-3xl mx-auto">
+          <h3 className="text-2xl font-semibold text-center mb-6">
+            募集対象
           </h3>
-          <div className="text-center space-y-2">
-            <p className="text-4xl font-bold text-brand-blue">
-              8〜20人
-            </p>
-            <p className="text-gray-600">
-              少人数で濃密なコミュニティを目指しています
-            </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="space-y-3">
+              <h4 className="font-semibold text-lg text-brand-blue">こんな方を歓迎</h4>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2" />
+                  <span>コーチング経験1〜5年の若手コーチ</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2" />
+                  <span>AI時代の変化に危機感を持つ方</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2" />
+                  <span>積極的に学び、成長したい方</span>
+                </li>
+              </ul>
+            </div>
+            <div className="space-y-3">
+              <h4 className="font-semibold text-lg text-brand-green">参加条件</h4>
+              <ul className="space-y-2 text-gray-600">
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2" />
+                  <span>月1〜2回のイベント参加可能</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2" />
+                  <span>他メンバーとの情報共有を歓迎</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2" />
+                  <span>建設的なフィードバック精神</span>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

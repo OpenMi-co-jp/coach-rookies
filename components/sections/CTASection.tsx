@@ -19,6 +19,10 @@ export default function CTASection() {
               イベントに申し込む
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+            <Button size="lg" className="bg-brand-green hover:bg-brand-green/90 text-white">
+              Slackに参加する
+              <MessageCircle className="ml-2 h-5 w-5" />
+            </Button>
             <Button size="lg" variant="outline" className="border-brand-blue text-brand-blue hover:bg-brand-blue/10">
               詳しい情報を見る
             </Button>

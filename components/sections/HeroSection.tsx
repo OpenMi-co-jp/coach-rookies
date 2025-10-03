@@ -40,9 +40,14 @@ export default function HeroSection() {
             </div>
           </div>
           
-          <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white text-lg px-8 py-6">
-            次回のイベントに参加する
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-brand-orange hover:bg-brand-orange/90 text-white text-lg px-8 py-6">
+              次回のイベントに参加する
+            </Button>
+            <Button size="lg" variant="outline" className="border-brand-green text-brand-green hover:bg-brand-green/10 text-lg px-8 py-6">
+              Slackに参加する
+            </Button>
+          </div>
         </div>
       </div>
     </section>
