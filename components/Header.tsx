@@ -43,7 +43,7 @@ export default function Header() {
               href="#members"
               className="text-sm font-medium hover:text-brand-orange transition-colors"
             >
-              メンバー
+              運営メンバー
             </a>
           </nav>
 

@@ -4,7 +4,7 @@ export default function MembersSection() {
   const members = [
     {
       name: 'なるさん',
-      role: '発起人・運営',
+      role: '運営',
       description: 'AIツールを活用したコーチングの先駆者',
       color: 'bg-brand-orange',
     },
@@ -21,10 +21,10 @@ export default function MembersSection() {
       <div className="container px-4 md:px-6">
         <div className="text-center space-y-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-            メンバー
+            運営メンバー
           </h2>
           <p className="mx-auto max-w-[700px] text-gray-600">
-            運営メンバーと現在のコミュニティ規模
+            コミュニティを運営するメンバーをご紹介します
           </p>
         </div>
 
