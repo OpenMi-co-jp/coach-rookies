@@ -36,7 +36,7 @@ export default function ConceptSection() {
             「助け合い、徒党を組んで攻める」
           </p>
           <p className="mx-auto max-w-[800px] text-gray-600">
-            AI時代に危機感を持つ若手・ルーキーコーチが集まり、
+            AI時代に危機感を持つ新米・ルーキーコーチが集まり、
             お互いの経験や知識を共有しながら、共に成長していくコミュニティです。
           </p>
         </div>

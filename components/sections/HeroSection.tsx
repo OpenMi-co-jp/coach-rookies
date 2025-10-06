@@ -23,7 +23,7 @@ export default function HeroSection() {
               コーチルーキーズ
             </h1>
             <p className="mx-auto max-w-[700px] text-lg sm:text-xl md:text-2xl text-gray-600">
-              AI時代を勝ち抜く若手コーチの徒党
+              AI時代を勝ち抜く新米コーチの徒党
             </p>
           </div>
 
@@ -43,7 +43,7 @@ export default function HeroSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://coachrookies01.peatix.com/view"
+              href="https://coach-rookies01.peatix.com/"
               target="_blank"
               rel="noopener noreferrer"
             >

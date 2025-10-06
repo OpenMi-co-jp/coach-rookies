@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Users, MessageCircle } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function CTASection() {
   return (
@@ -21,32 +22,31 @@ export default function CTASection() {
             一緒にAI時代を勝ち抜きましょう
           </h2>
           <p className="text-lg text-gray-600">
-            若手コーチのためのコミュニティ
+            新米コーチのためのコミュニティ
             <br />
             一人で悩むのではなく、仲間と一緒に成長しませんか？
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-brand-orange hover:bg-brand-orange/90 text-white"
+            <Link
+              href="https://coach-rookies01.peatix.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              イベントに申し込む
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+              <Button
+                size="lg"
+                className="bg-brand-orange hover:bg-brand-orange/90 text-white"
+              >
+                イベントの詳細を確認
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
             <Button
               size="lg"
               className="bg-brand-green hover:bg-brand-green/90 text-white"
             >
               Slackに参加する
               <MessageCircle className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-brand-blue text-brand-blue hover:bg-brand-blue/10"
-            >
-              詳しい情報を見る
             </Button>
           </div>
 

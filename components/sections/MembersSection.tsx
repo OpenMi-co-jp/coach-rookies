@@ -104,7 +104,7 @@ export default function MembersSection() {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2" />
-                  <span>コーチング経験目安3年目までの若手コーチ</span>
+                  <span>コーチング経験目安3年目までの新米コーチ</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2" />

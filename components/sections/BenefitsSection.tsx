@@ -14,7 +14,7 @@ export default function BenefitsSection() {
     },
     {
       title: '切磋琢磨できる仲間',
-      description: '同じ悩みを持つ若手コーチとのつながりでモチベーションUP',
+      description: '同じ悩みを持つ新米コーチとのつながりでモチベーションUP',
     },
     {
       title: 'コーチングスキルの向上',
