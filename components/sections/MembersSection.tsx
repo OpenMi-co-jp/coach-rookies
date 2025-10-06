@@ -18,6 +18,7 @@ export default function MembersSection() {
       description: 'コミュニティ運営とイベント企画担当',
       color: 'bg-brand-blue',
       image: '/yuta.png',
+      link: 'https://shinjiya.com/',
     },
   ]
 
