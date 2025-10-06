@@ -24,7 +24,8 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(pnpm type-check:*)",
-      "Bash(pnpm lint:*)"
+      "Bash(pnpm lint:*)",
+      "Bash(git push:*)"
     ],
     "deny": []
   }

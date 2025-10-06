@@ -1,4 +1,6 @@
 import { User } from 'lucide-react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function MembersSection() {
   const members = [
@@ -7,12 +9,15 @@ export default function MembersSection() {
       role: '運営',
       description: 'AIツールを活用したコーチングの先駆者',
       color: 'bg-brand-orange',
+      image: '/naru_imgJPG.JPG',
+      link: 'https://www.brighty.site/naru',
     },
     {
       name: 'ゆうたさん',
       role: '共同運営',
       description: 'コミュニティ運営とイベント企画担当',
       color: 'bg-brand-blue',
+      image: '/yuta.png',
     },
   ]
 
@@ -34,11 +39,49 @@ export default function MembersSection() {
               key={index}
               className="flex flex-col items-center text-center space-y-4"
             >
-              <div
-                className={`w-24 h-24 rounded-full ${member.color} flex items-center justify-center shadow-lg`}
-              >
-                <User className="h-12 w-12 text-white" />
-              </div>
+              {member.link ? (
+                <Link
+                  href={member.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg hover:scale-105 transition-transform cursor-pointer">
+                    {member.image ? (
+                      <Image
+                        src={member.image}
+                        alt={member.name}
+                        width={96}
+                        height={96}
+                        className="w-full h-full object-cover"
+                      />
+                    ) : (
+                      <div
+                        className={`w-full h-full ${member.color} flex items-center justify-center`}
+                      >
+                        <User className="h-12 w-12 text-white" />
+                      </div>
+                    )}
+                  </div>
+                </Link>
+              ) : (
+                <div className="w-24 h-24 rounded-full overflow-hidden shadow-lg">
+                  {member.image ? (
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={96}
+                      height={96}
+                      className="w-full h-full object-cover"
+                    />
+                  ) : (
+                    <div
+                      className={`w-full h-full ${member.color} flex items-center justify-center`}
+                    >
+                      <User className="h-12 w-12 text-white" />
+                    </div>
+                  )}
+                </div>
+              )}
               <div className="space-y-1">
                 <h3 className="font-semibold text-lg">{member.name}</h3>
                 <p className="text-sm text-gray-600">{member.role}</p>
@@ -60,7 +103,7 @@ export default function MembersSection() {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2" />
-                  <span>コーチング経験1〜5年の若手コーチ</span>
+                  <span>コーチング経験目安3年目までの若手コーチ</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-brand-orange mt-2" />
@@ -79,15 +122,15 @@ export default function MembersSection() {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2" />
-                  <span>月1〜2回のイベント参加可能</span>
+                  <span>前のめりでコーチとしての活動をしている人</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2" />
-                  <span>他メンバーとの情報共有を歓迎</span>
+                  <span>建設的なフィードバックと情報共有を楽しめる方</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-brand-blue mt-2" />
-                  <span>建設的なフィードバック精神</span>
+                  <span>学び合いの精神を大切にできる方</span>
                 </li>
               </ul>
             </div>

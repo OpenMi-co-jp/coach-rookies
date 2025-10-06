@@ -5,7 +5,7 @@ export default function BenefitsSection() {
     {
       title: '最新情報へのアクセス',
       description:
-        'AIツールやコーチング手法の最前線情報をいち早くキャッチアップ',
+        'AIツールやコーチング手法の最前線情報をいち早くキャッチアップし、キャリアの選択肢を広げる',
     },
     {
       title: '実践的なフィードバック',
@@ -19,14 +19,6 @@ export default function BenefitsSection() {
     {
       title: 'コーチングスキルの向上',
       description: 'ロールプレイや相互コーチングで実践的なスキルを磨く',
-    },
-    {
-      title: 'キャリアの選択肢拡大',
-      description: 'ネットワークを通じて新たなビジネスチャンスを発見',
-    },
-    {
-      title: 'コストパフォーマンス',
-      description: '無料または低価格で質の高い学習機会を提供',
     },
   ]
 

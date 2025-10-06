@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { Calendar, MapPin } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function HeroSection() {
   return (
@@ -22,7 +23,7 @@ export default function HeroSection() {
               コーチルーキーズ
             </h1>
             <p className="mx-auto max-w-[700px] text-lg sm:text-xl md:text-2xl text-gray-600">
-              AI時代を勝ち抜く若手コーチの徒党。
+              AI時代を勝ち抜く若手コーチの徒党
             </p>
           </div>
 
@@ -41,12 +42,18 @@ export default function HeroSection() {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button
-              size="lg"
-              className="bg-brand-orange hover:bg-brand-orange/90 text-white text-lg px-8 py-6"
+            <Link
+              href="https://coachrookies01.peatix.com/view"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              次回のイベントに参加する
-            </Button>
+              <Button
+                size="lg"
+                className="bg-brand-orange hover:bg-brand-orange/90 text-white text-lg px-8 py-6"
+              >
+                イベントの詳細を確認
+              </Button>
+            </Link>
             <Button
               size="lg"
               variant="outline"

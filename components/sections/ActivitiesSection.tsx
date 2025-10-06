@@ -11,21 +11,25 @@ export default function ActivitiesSection() {
   const activities = [
     {
       icon: Brain,
-      title: 'AI勉強会',
+      title: 'コーチング勉強会',
       description:
-        '最新のAIツールや活用方法を学び、コーチングに活かす方法を探求します。',
+        'コーチングの実践や最新知見を学び合い、互いの成長につなげる場です。',
+      features: [
+        '実践事例や気づきの共有',
+        '最新情報や学びの提供',
+        '多様な視点でディスカッション',
+      ],
+    },
+    {
+      icon: MessageSquare,
+      title: 'AIやツールの勉強会',
+      description:
+        '最新のAIツールや各種ツールの活用方法を学び、コーチングに活かす方法を探求します。',
       features: [
         'ChatGPT/Claudeの活用術',
         'プロンプトエンジニアリング',
         'AIツールの比較・選定',
       ],
-    },
-    {
-      icon: MessageSquare,
-      title: 'AIフィードバックシェア',
-      description:
-        '実際のAI活用事例やコーチングセッションへの応用を共有します。',
-      features: ['成功事例の共有', '失敗からの学び', 'ベストプラクティス'],
     },
     {
       icon: Coffee,

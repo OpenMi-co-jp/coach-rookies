@@ -21,7 +21,7 @@ export default function CTASection() {
             一緒にAI時代を勝ち抜きましょう
           </h2>
           <p className="text-lg text-gray-600">
-            若手コーチのためのコミュニティ。
+            若手コーチのためのコミュニティ
             <br />
             一人で悩むのではなく、仲間と一緒に成長しませんか？
           </p>
