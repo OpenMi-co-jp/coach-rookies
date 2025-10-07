@@ -29,7 +29,7 @@ export default function CTASection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="https://coach-rookies01.peatix.com/"
+              href="https://coach-rookies001.peatix.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
